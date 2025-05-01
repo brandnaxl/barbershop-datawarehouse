@@ -1,0 +1,152 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>AnalysisMultiDimensionalBarbershopTO</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>qmS3Bc8+fmLPtHb+UEm08LRstJ0=02/12/2024 19:34:3502/12/2024 19:34:35</TimeStamp>
+        <ID>
+          <String>Barbershop OLAP</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>/wUNehRo8Y3YHyGbxGmN3nOdTCM=02/12/2024 19:39:5502/12/2024 19:39:54</TimeStamp>
+        <ID>
+          <String>Barbershop OLAP</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DlFvHsM5TewhCnyDio2RuKkNIEc=02/12/2024 19:52:2002/12/2024 19:43:28</TimeStamp>
+        <ID>
+          <String>Product Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IMvDBH18VfcP3DuCTS6q52AjAhA=02/12/2024 19:52:2002/12/2024 19:43:28</TimeStamp>
+        <ID>
+          <String>Staff Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qOIlzxq9XNG1CnRsrOfVhv+OXbQ=02/12/2024 19:52:2002/12/2024 19:43:28</TimeStamp>
+        <ID>
+          <String>Supplier Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZTHzG/m7PmRgnSRF7jt07DnEWLU=02/12/2024 19:52:2002/12/2024 19:43:28</TimeStamp>
+        <ID>
+          <String>Time Dimension Haircut</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>bSXy6MlQ7HOALr8B7bxbfJ9Yfc0=02/12/2024 19:52:2002/12/2024 19:43:28</TimeStamp>
+        <ID>
+          <String>Time Dimension Purchase</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hLoD1CLDdxEJpnlV7+pc9Cv/AFI=02/12/2024 19:52:1902/12/2024 19:43:28</TimeStamp>
+        <ID>
+          <String>Time Dimension Sales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Cb7fwmN21vrW7LUGIFq0nmsX/yE=02/12/2024 19:52:1902/12/2024 19:43:28</TimeStamp>
+        <ID>
+          <String>Time Dimension Subscription</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xoZnpJ6e3Mt5vBQzJNVFnLA0Xao=02/12/2024 19:52:1902/12/2024 19:44:36</TimeStamp>
+        <ID>
+          <String>Customer Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fMhRtUq4LZxzvCVJNyEAFT/M5+w=02/12/2024 19:52:1902/12/2024 19:46:28</TimeStamp>
+        <ID>
+          <String>Benefit Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>07em9dbx5plLwd35AOEMsuwSkY8=02/12/2024 19:52:1902/12/2024 19:47:22</TimeStamp>
+        <ID>
+          <String>Package Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>E9YhZcMzZ9C/3pvakK0oVPjM2ng=02/12/2024 19:52:5002/12/2024 19:47:22</TimeStamp>
+        <ID>
+          <String>Barber Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Ut6s42FdMeOQIKmBH19QdfhSXlw=02/12/2024 19:52:2002/12/2024 19:43:281oLXJj/StQUvLo+XW00IrU4KfCQ=02/12/2024 19:43:2902/12/2024 19:43:28</TimeStamp>
+        <ID>
+          <String>PurchaseTransactionCube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>wEwu0MTrP+zKPSdecf4uyfoTtz4=02/12/2024 19:52:1902/12/2024 19:44:36hesxRQW06K9dhOhUVUClaGqDBYM=02/12/2024 19:44:3602/12/2024 19:44:36</TimeStamp>
+        <ID>
+          <String>Barbershop OLAP</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>dXNK+vyae/mhEiAMtbqCQX5PEFk=02/12/2024 19:52:1902/12/2024 19:46:27vCk7HXR6FS1+s607lh6RdZpDFSw=02/12/2024 19:46:2802/12/2024 19:46:27</TimeStamp>
+        <ID>
+          <String>SubscriptionTransactionCube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>5HRGtVY6Kna8jalSW4MmyqtoO9Y=02/12/2024 19:52:1902/12/2024 19:47:22nUiAoiGnadoqV7eOcWt8Q94JRdU=02/12/2024 19:47:2202/12/2024 19:47:22</TimeStamp>
+        <ID>
+          <String>HaircutTransactionCube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>MbYg5R9Lq5lnTLl1b2gHQEZtn2U=02/12/2024 19:31:2502/12/2024 19:31:24</TimeStamp>
+      <ID>
+        <String>AnalysisMultiDimensionalBarbershopTO</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-12-02T12:55:40.97Z</LastDeployed>
+</DeploymentSnapshot>

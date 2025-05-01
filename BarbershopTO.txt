@@ -1,0 +1,130 @@
+BarbershopTO 
+Sales Transaction Measurement:
+Total Sales Earnings: SUM(MsProduct.ProductSellingPrice * TrSalesDetail.Quantity)
+Total Haircare Products Sold: SUM(TrSalesDetail.Quantity)
+
+Purchase Transaction Measurement:
+Total Purchase Expense: SUM(MsProduct.ProductBuyingPrice * TrPurchaseDetail.Quantity)
+Total Material Purchased: SUM(TrPurchaseDetail.Quantity)
+
+Subscription Transaction Measurement:
+Total Subscription Earning: SUM(MsBenefit.BenefitPrice)
+Total Subscriber: COUNT(TrSubscriptionHeader.SubscriptionID)
+
+Haircut Transaction Measurement:
+Total Haircut Earning: SUM(MsPackage.PackagePrice * TrHaircutDetail.Quantity)
+Total Barber: COUNT(TrHaircutHeader.BarberID)
+
+Table Dimension:
+Product Dimension
+- ProductCode [Primary Key]
+- ProductID [Business Key]
+- ProductSellingPrice [Historical Attribute]
+- ProductBuyingPrice [Historical Attribute]
+- ValidFrom
+- ValidTo
+
+Barber Dimension
+- BarberCode [Primary Key]
+- BarberID [Business Key]
+- BarberDOB
+- BarberSalary [Historical Attribute]
+- BarberAddress [Changing Attribute]
+- ValidFrom
+- ValidTo
+
+Staff Dimension
+- StaffCode [Primary Key]
+- StaffID [Business Key]
+- StaffDOB
+- StaffSalary [Historical Attribute]
+- StaffAddress [Changing Attribute]
+- ValidFrom
+- ValidTo
+
+Customer Dimension
+- CustomerCode [Primary Key]
+- CustomerID [Business Key]
+- CustomerAddress [Changing Attribute]
+- CustomerGender [Derived Attribute, Male -> M, Female -> F]
+
+Benefit Dimension
+- BenefitCode [Primary Key]
+- BenefitID [Business Key]
+- BenefitPrice [Historical Attribute]
+- ValidFrom
+- ValidTo
+
+Package Dimension
+- PackageCode [Primary Key]
+- PackageID [Business Key]
+- PackagePrice [Historical Attribute]
+- ValidFrom
+- ValidTo
+
+Supplier Dimension
+- SupplierCode [Primary Key]
+- SupplierID [Business Key]
+- SupplierAddress [Changing Attribute]
+- SupplierPhone [Changing Attribute]
+
+Time Dimension
+- TimeCode [Primary Key]
+- [Date] 
+- [Day]
+- [Month]
+- [Quarter] 
+- [Year]
+
+FilterTimeStamp
+- TableName [Primary Key]
+- LastETL
+
+Fact Table:
+SalesTransaction:
+ProductCode
+StaffCode
+CustomerCode
+TotalSalesEarnings: SUM(MsProduct.ProductSellingPrice * TrSalesDetail.Quantity)
+TotalHaircareProductsSold: SUM(TrSalesDetail.Quantity)
+
+PurchaseTransaction:
+ProductCode
+StaffCode
+SupplierCode
+TotalPurchaseExpense: SUM(MsProduct.ProductBuyingPrice * TrPurchaseDetail.Quantity)
+TotalMaterialPurchased: SUM(TrPurchaseDetail.Quantity)
+
+SubscriptionTransaction:
+CustomerCode
+StaffCode
+BenefitCode
+TotalSubscriptionEarning: SUM(MsBenefit.BenefitPrice)
+TotalSubscriber: COUNT(TrSubscriptionHeader.SubscriptionID)
+
+HaircutTransaction:
+CustomerCode
+PackageCode
+BarberCode
+TotalHaircutEarning: SUM(MsPackage.PackagePrice * TrHaircutDetail.Quantity)
+TotalBarber: COUNT(TrHaircutHeader.BarberID)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
